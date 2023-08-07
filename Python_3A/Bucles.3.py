@@ -7,6 +7,7 @@ palabra = input("Pon tu palabra: ")
 
 # Mostramos una a una las letras de la palabra
 
-# No se
+for letra in reversed(palabra):
+    print(letra)
 
     
