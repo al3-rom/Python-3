@@ -7,9 +7,9 @@
 
 # 4.Modificar el segundo objeto de la lista y cambiarlo a mora
 
-# 5.Añadir el string magona al final de la lista
+# 5.Añadir el string mango al final de la lista
 
-# 6.Usar el metodo insert() y añadir el string (uva) año comienzo de la lista
+# 6.Usar el metodo insert() y añadir el string (uva) al comienzo de la lista
 
 # 7.Usar el bucle para recorrer la lista e imprimir cada fruta por la consola
 
@@ -37,13 +37,13 @@ frutas[1] = "mora"
 #5
 frutas.append("magona")
 #6
-#NO lO SE
+frutas.insert(0, "uva")
 #7
 for fruta in frutas:
     print(fruta)
 print(" /// ") #para separar con otras listas
 #8
-ultima_fruta = frutas.pop(-1)
+ultima_fruta = frutas.pop()
 #9
 for fruta in frutas:
     print(fruta)
@@ -55,7 +55,7 @@ for fruta in frutas:
 print(" /// ") #para separar con otras listas
 #11
 for fruta in frutas:
-    if len(fruta) == 5:
+    if len(fruta) > 5:
      print(fruta)
 print(" /// ") #para separar con otras listas
 #12

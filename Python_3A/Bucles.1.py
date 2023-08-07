@@ -15,7 +15,9 @@
 num = int(input("Pon un numero: "))
 
 # Hacemos el bucle
- #No se como hacer
+for i in range(1, num + 1):
+    print("*"*i + " " * (num - i))
     
-
+for i in range(num-1, 0, -1):
+    print("*" * i + " " * (num - 1))
 
