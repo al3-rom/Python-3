@@ -9,9 +9,16 @@ lista_original = ["coche", "telefono", "cuchillo", "banana", "microfono"]
 letras_prohibidas = ["a", "t", "l"]
 
 # 2 
-palabras_filtradas = [palabra for palabra in lista_original if all(letra not in palabra for letra in letras_prohibidas)]
+palabras_filtradas = []
 
-         
+for palabra in lista_original:
+    incluir = True
+    for letra_prohibida in letras_prohibidas:         
+        if letra_prohibida in palabra:
+            incluir = False
+        
+    if incluir:
+        palabras_filtradas.append(palabra)
             
 
 print(palabras_filtradas)
